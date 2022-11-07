@@ -13,14 +13,16 @@ namespace ImportCSV
         static void Main(string[] args)
         {
             ///Reading all the file for the first time
-            ///*reading all file
-            ///string csvAllText = System.IO.File.ReadAllText(@"C:\\Users\\c052108\\OneDrive - Yara International ASA\\Desktop\\VS Projects\Products.csv");
+            //string csvAllText = System.IO.File.ReadAllText(@"C:\\Users\\c052108\\OneDrive - Yara International ASA\\Desktop\\VS Projects\Products.csv");
 
             //Read the file into lines
             string[] csvLines = System.IO.File.ReadAllLines(@"C:\Users\c052108\OneDrive - Yara International ASA\Desktop\VS Projects\Products.csv");
 
+            ///Bringuing my Object Products Alive as a list
             var products = new List<Products>();
+            
 
+            //I'm puting a index counter to run all the lines of the file
             for (int i = 1; i < csvLines.Length; i++)
             {       
                     

@@ -10,11 +10,16 @@ namespace ImportCSV
         public double ProductPrice { get; set; }
         public double ProductWeight { get; set; }
 
+
+        //The main class method is returning a string array of csvLines
+        //This way i can select line from line, and start choppinh each elemrnt separated by comma;
         public Products(string csvLines)
         {
+            //using the split method and saying to the program to 
             string[] data = csvLines.Split(',');
 
                 //addig the parts chopped into my class properties
+                //using the try cacth to treat some issues because i have numbers and chars on the info.
                 try
                 {
                     ProductName = data[0];
