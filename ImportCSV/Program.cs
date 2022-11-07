@@ -14,9 +14,16 @@ namespace ImportCSV
         {
             ///Reading all the file for the first time
             //string csvAllText = System.IO.File.ReadAllText(@"C:\\Users\\c052108\\OneDrive - Yara International ASA\\Desktop\\VS Projects\Products.csv");
+            Console.Title = "CSV IMPORTER";
+            Console.WriteLine("**************CSV Importer**************");
+            Console.WriteLine();
+            Console.WriteLine("Please imput the file path:");
+            Console.WriteLine();
+            Console.ReadKey();
+            var filePath = Console.ReadLine();
 
             //Read the file into lines
-            string[] csvLines = System.IO.File.ReadAllLines(@"C:\Users\c052108\OneDrive - Yara International ASA\Desktop\VS Projects\Products.csv");
+            string[] csvLines = System.IO.File.ReadAllLines("C" + filePath);
 
             ///Bringuing my Object Products Alive as a list
             var products = new List<Products>();
