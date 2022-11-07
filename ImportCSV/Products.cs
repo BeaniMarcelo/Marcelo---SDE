@@ -1,24 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ImportCSV
 {
     public class Products
     {
-        public string ProductName,
-                      ProductBrand;
+        public string ProductName { get; set; }
+        public string ProductBrand { get; set; }
 
-        public double ProductPrice,
-                      ProductWeight;
+        public double ProductPrice { get; set; }
+        public double ProductWeight { get; set; }
 
         public Products(string csvLines)
         {
-                string[] data = csvLines.Split(',');
-
+            string[] data = csvLines.Split(',');
 
                 //addig the parts chopped into my class properties
                 try
@@ -53,10 +47,11 @@ namespace ImportCSV
         public override string ToString()
         {
 
-            string str = $"Description:{ProductName} " +
-                $"Price: ${ProductPrice} " +
-                $"Brand: {ProductBrand} " +
-                $"Weight {ProductWeight}";              
+            string str = $"Product Info:" + $"\n" + 
+                $"Description:{ProductName} " + $"\n" +
+                $"Price: ${ProductPrice} " + $"\n" +
+                $"Brand: {ProductBrand} " + $"\n" +
+                $"Weight: {ProductWeight}" + $"\n";
             return str;
         }
 

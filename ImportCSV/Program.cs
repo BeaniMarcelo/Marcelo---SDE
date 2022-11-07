@@ -24,13 +24,11 @@ namespace ImportCSV
             for (int i = 1; i < csvLines.Length; i++)
             {       
                     
-                Products prod = new Products(csvLines[i]);
+                Products prod = new Products(csvLines[i]);               
                 if (prod.ProductBrand != null)
                 products.Add(prod);
 
             }
-
-            Console.WriteLine("Products Imported:");
 
             for (int i = 0; i < products.Count; i++)
             {
