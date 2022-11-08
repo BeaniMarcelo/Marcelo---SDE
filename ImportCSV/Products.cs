@@ -13,10 +13,12 @@ namespace ImportCSV
 
         //The main class method is returning a string array of csvLines
         //This way i can select line from line, and start choppinh each elemrnt separated by comma;
+
+
         public Products(string csvLines)
         {
             //using the split method and saying to the program to 
-            string[] data = csvLines.Split(',');
+            string[] data = csvLines.Split(';');
 
                 //addig the parts chopped into my class properties
                 //using the try cacth to treat some issues because i have numbers and chars on the info.
@@ -45,6 +47,7 @@ namespace ImportCSV
                 catch { }
             
         }
+
 
         //I used the override method where so all when I ask the main 
         //class to print the product List, the method will do this for all the products.
