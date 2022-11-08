@@ -35,15 +35,15 @@ namespace ImportCSV
 
                 //Finally, using the single line i isolated and passing to the Object product
                 products.Add(prod);
-                Console.WriteLine(products);
+                
 
             }
 
-            //for (int i = 0; i < products.Count; i++)
-            //{
+            for (int i = 0; i < products.Count; i++)
+            {
                 
-               ////Console.WriteLine(products[i]);
-            //}
+               Console.WriteLine(products[i]);
+            }
 
             Console.WriteLine("Total of Products: " + products.Count) ;        
             Console.ReadKey();
