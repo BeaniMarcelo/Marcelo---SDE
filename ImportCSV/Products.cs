@@ -25,26 +25,18 @@ namespace ImportCSV
                 try
                 {
                     ProductName = data[0];
-                }
-                catch { }
-
-                try
-                {
                     ProductPrice = Convert.ToDouble(data[1]);
-                }
-                catch { }
-
-                try
-                {                   
                     ProductBrand = data[2];
-                }
-                catch { }
-
-                try
-                {
                     ProductWeight = Convert.ToDouble(data[3]);
                 }
-                catch { }
+         
+                catch (Exception erro)
+                {
+                    Console.WriteLine(erro);
+
+                }
+
+               
             
         }
 

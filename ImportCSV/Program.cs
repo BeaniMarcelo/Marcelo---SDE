@@ -17,7 +17,7 @@ namespace ImportCSV
 
 
             //Read the file into lines
-            string[] csvLines = System.IO.File.ReadAllLines(@"C:\Users\Marcelo & Ellen\source\repos\Marcelo---SDE\Products.csv");
+            string[] csvLines = System.IO.File.ReadAllLines(@"C:\Users\c052108\source\repos\Marcelo---SDE");
 
             ///Bringuing my Object Products Alive as a list
             var products = new List<Products>();
